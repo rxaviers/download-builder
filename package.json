@@ -1,0 +1,11 @@
+{
+    "name": "download-builder",
+    "description": "",
+    "version": "0.0.0",
+    "homepage": "http://github.com/DownloadBuilder/download-builder",
+    "main": "src/download-builder",
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/DownloadBuilder/download-builder.git"
+    }
+}

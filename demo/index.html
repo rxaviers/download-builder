@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="us">
+<head>
+    <title>jQuery UI Download Builder</title>
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.0/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="app.css">
+
+<div class="download-builder">
+    <form method="POST" action="http://download.jqueryui.com/download">
+        <div class="download-builder-header">
+            <h2>Components</h2><label class="toggleAll"> <input type="checkbox" checked="" class="toggle-all ui-widget-content">Toggle All</label>
+        </div>
+        <div class="components-area">
+            <div class="ui-widget ui-widget-content component-group clearfix">
+                <div class="component-group-desc">
+                    <h3>UI Core</h3><label class="toggle"> <input type="checkbox" checked="" class="toggle-all-core ui-widget-content">Toggle All</label>
+                    <p>A required dependency, contains basic functions and initializers.</p>
+                </div>
+                <div class="component-group-list">
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="" class="ui-widget-content" name="core" checked="" id="core">
+                        <label class="clearfix" title="The core of jQuery UI, required for all interactions and widgets." for="core">
+                            <span class="component-title">Core</span>
+                            <span class="component-desc">The core of jQuery UI, required for all interactions and widgets.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="" class="ui-widget-content" name="widget" checked="" id="widget">
+                        <label class="clearfix" title="Provides a factory for creating stateful widgets with a common API." for="widget">
+                            <span class="component-title">Widget</span>
+                            <span class="component-desc">Provides a factory for creating stateful widgets with a common API.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget" class="ui-widget-content" name="mouse" checked="" id="mouse">
+                        <label class="clearfix" title="Abstracts mouse-based interactions to assist in creating certain widgets." for="mouse">
+                            <span class="component-title">Mouse</span>
+                            <span class="component-desc">Abstracts mouse-based interactions to assist in creating certain widgets.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="" class="ui-widget-content" name="position" checked="" id="position">
+                        <label class="clearfix" title="Positions elements relative to other elements." for="position">
+                            <span class="component-title">Position</span>
+                            <span class="component-desc">Positions elements relative to other elements.</span>
+                        </label>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="ui-widget ui-widget-content component-group clearfix">
+                <div class="component-group-desc">
+                    <h3>Interactions</h3><label class="toggle"> <input type="checkbox" checked="" class="toggle-all-interactions ui-widget-content">Toggle All</label>
+                    <p>These add basic behaviors to any element and are used by many components below.</p>
+                </div>
+                <div class="component-group-list">
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,mouse" class="ui-widget-content" name="draggable" checked="" id="draggable">
+                        <label class="clearfix" title="Enables dragging functionality for any element." for="draggable">
+                            <span class="component-title">Draggable</span>
+                            <span class="component-desc">Enables dragging functionality for any element.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,mouse,draggable" class="ui-widget-content" name="droppable" checked="" id="droppable">
+                        <label class="clearfix" title="Enables drop targets for draggable elements." for="droppable">
+                            <span class="component-title">Droppable</span>
+                            <span class="component-desc">Enables drop targets for draggable elements.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,mouse" class="ui-widget-content" name="resizable" checked="" id="resizable">
+                        <label class="clearfix" title="Enables resize functionality for any element." for="resizable">
+                            <span class="component-title">Resizable</span>
+                            <span class="component-desc">Enables resize functionality for any element.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,mouse" class="ui-widget-content" name="selectable" checked="" id="selectable">
+                        <label class="clearfix" title="Allows groups of elements to be selected with the mouse." for="selectable">
+                            <span class="component-title">Selectable</span>
+                            <span class="component-desc">Allows groups of elements to be selected with the mouse.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,mouse" class="ui-widget-content" name="sortable" checked="" id="sortable">
+                        <label class="clearfix" title="Enables items in a list to be sorted using the mouse." for="sortable">
+                            <span class="component-title">Sortable</span>
+                            <span class="component-desc">Enables items in a list to be sorted using the mouse.</span>
+                        </label>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="ui-widget ui-widget-content component-group clearfix">
+                <div class="component-group-desc">
+                    <h3>Widgets</h3><label class="toggle"> <input type="checkbox" checked="" class="toggle-all-widgets ui-widget-content">Toggle All</label>
+                    <p>Full-featured UI Controls - each has a range of options and is fully themeable.</p>
+                </div>
+                <div class="component-group-list">
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget" class="ui-widget-content" name="accordion" checked="" id="accordion">
+                        <label class="clearfix" title="Displays collapsible content panels for presenting information in a limited amount of space." for="accordion">
+                            <span class="component-title">Accordion</span>
+                            <span class="component-desc">Displays collapsible content panels for presenting information in a limited amount of space.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,menu,position" class="ui-widget-content" name="autocomplete" checked="" id="autocomplete">
+                        <label class="clearfix" title="Lists suggested words as the user is typing." for="autocomplete">
+                            <span class="component-title">Autocomplete</span>
+                            <span class="component-desc">Lists suggested words as the user is typing.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget" class="ui-widget-content" name="button" checked="" id="button">
+                        <label class="clearfix" title="Enhances a form with themable buttons." for="button">
+                            <span class="component-title">Button</span>
+                            <span class="component-desc">Enhances a form with themable buttons.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core" class="ui-widget-content" name="datepicker" checked="" id="datepicker">
+                        <label class="clearfix" title="Displays a calendar from an input or inline for selecting dates." for="datepicker">
+                            <span class="component-title">Datepicker</span>
+                            <span class="component-desc">Displays a calendar from an input or inline for selecting dates.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,button,draggable,position,resizable" class="ui-widget-content" name="dialog" checked="" id="dialog">
+                        <label class="clearfix" title="Displays customizable dialog windows." for="dialog">
+                            <span class="component-title">Dialog</span>
+                            <span class="component-desc">Displays customizable dialog windows.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,position" class="ui-widget-content" name="menu" checked="" id="menu">
+                        <label class="clearfix" title="Creates nestable menus." for="menu">
+                            <span class="component-title">Menu</span>
+                            <span class="component-desc">Creates nestable menus.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget" class="ui-widget-content" name="progressbar" checked="" id="progressbar">
+                        <label class="clearfix" title="Displays a status indicator for loading state, standard percentage, and other progress indicators." for="progressbar">
+                            <span class="component-title">Progressbar</span>
+                            <span class="component-desc">Displays a status indicator for loading state, standard percentage, and other progress indicators.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,mouse" class="ui-widget-content" name="slider" checked="" id="slider">
+                        <label class="clearfix" title="Displays a flexible slider with ranges and accessibility via keyboard." for="slider">
+                            <span class="component-title">Slider</span>
+                            <span class="component-desc">Displays a flexible slider with ranges and accessibility via keyboard.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,button" class="ui-widget-content" name="spinner" checked="" id="spinner">
+                        <label class="clearfix" title="Displays buttons to easily input numbers via the keyboard or mouse." for="spinner">
+                            <span class="component-title">Spinner</span>
+                            <span class="component-desc">Displays buttons to easily input numbers via the keyboard or mouse.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget" class="ui-widget-content" name="tabs" checked="" id="tabs">
+                        <label class="clearfix" title="Transforms a set of container elements into a tab structure." for="tabs">
+                            <span class="component-title">Tabs</span>
+                            <span class="component-desc">Transforms a set of container elements into a tab structure.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="core,widget,position" class="ui-widget-content" name="tooltip" checked="" id="tooltip">
+                        <label class="clearfix" title="Shows additional information for any element on hover or focus." for="tooltip">
+                            <span class="component-title">Tooltip</span>
+                            <span class="component-desc">Shows additional information for any element on hover or focus.</span>
+                        </label>
+                    </div>
+                
+                </div>
+            </div>
+
+            <div class="ui-widget ui-widget-content component-group clearfix">
+                <div class="component-group-desc">
+                    <h3>Effects</h3><label class="toggle"> <input type="checkbox" checked="" class="toggle-all-effects ui-widget-content">Toggle All</label>
+                    <p>A rich effect API and ready to use effects.</p>
+                </div>
+                <div class="component-group-list">
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="" class="ui-widget-content" name="effect" checked="" id="effect">
+                        <label class="clearfix" title="Extends the internal jQuery effects. Includes morphing and easing. Required by all other effects." for="effect">
+                            <span class="component-title">Effects Core</span>
+                            <span class="component-desc">Extends the internal jQuery effects. Includes morphing and easing. Required by all other effects.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-blind" checked="" id="effect-blind">
+                        <label class="clearfix" title="Blinds the element." for="effect-blind">
+                            <span class="component-title">Blind Effect</span>
+                            <span class="component-desc">Blinds the element.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-bounce" checked="" id="effect-bounce">
+                        <label class="clearfix" title="Bounces an element horizontally or vertically n times." for="effect-bounce">
+                            <span class="component-title">Bounce Effect</span>
+                            <span class="component-desc">Bounces an element horizontally or vertically n times.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-clip" checked="" id="effect-clip">
+                        <label class="clearfix" title="Clips the element on and off like an old TV." for="effect-clip">
+                            <span class="component-title">Clip Effect</span>
+                            <span class="component-desc">Clips the element on and off like an old TV.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-drop" checked="" id="effect-drop">
+                        <label class="clearfix" title="Moves an element in one direction and hides it at the same time." for="effect-drop">
+                            <span class="component-title">Drop Effect</span>
+                            <span class="component-desc">Moves an element in one direction and hides it at the same time.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-explode" checked="" id="effect-explode">
+                        <label class="clearfix" title="Explodes an element in all directions into n pieces. Implodes an element to its original wholeness." for="effect-explode">
+                            <span class="component-title">Explode Effect</span>
+                            <span class="component-desc">Explodes an element in all directions into n pieces. Implodes an element to its original wholeness.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-fade" checked="" id="effect-fade">
+                        <label class="clearfix" title="Fades an element." for="effect-fade">
+                            <span class="component-title">Fade Effect</span>
+                            <span class="component-desc">Fades an element.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-fold" checked="" id="effect-fold">
+                        <label class="clearfix" title="Folds an element first horizontally and then vertically." for="effect-fold">
+                            <span class="component-title">Fold Effect</span>
+                            <span class="component-desc">Folds an element first horizontally and then vertically.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-highlight" checked="" id="effect-highlight">
+                        <label class="clearfix" title="Highlights the background of an element in a defined color for a custom duration." for="effect-highlight">
+                            <span class="component-title">Highlight Effect</span>
+                            <span class="component-desc">Highlights the background of an element in a defined color for a custom duration.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-pulsate" checked="" id="effect-pulsate">
+                        <label class="clearfix" title="Pulsates an element n times by changing the opacity to zero and back." for="effect-pulsate">
+                            <span class="component-title">Pulsate Effect</span>
+                            <span class="component-desc">Pulsates an element n times by changing the opacity to zero and back.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-scale" checked="" id="effect-scale">
+                        <label class="clearfix" title="Grows or shrinks an element and its content. Restores an elemnt to its original size." for="effect-scale">
+                            <span class="component-title">Scale Effect</span>
+                            <span class="component-desc">Grows or shrinks an element and its content. Restores an elemnt to its original size.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-shake" checked="" id="effect-shake">
+                        <label class="clearfix" title="Shakes an element horizontally or vertically n times." for="effect-shake">
+                            <span class="component-title">Shake Effect</span>
+                            <span class="component-desc">Shakes an element horizontally or vertically n times.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-slide" checked="" id="effect-slide">
+                        <label class="clearfix" title="Slides an element in and out of the viewport." for="effect-slide">
+                            <span class="component-title">Slide Effect</span>
+                            <span class="component-desc">Slides an element in and out of the viewport.</span>
+                        </label>
+                    </div>
+                
+                    <div class="clearfix">
+                        <input type="checkbox" data-dependencies="effect" class="ui-widget-content" name="effect-transfer" checked="" id="effect-transfer">
+                        <label class="clearfix" title="Displays a transfer effect from one element to another." for="effect-transfer">
+                            <span class="component-title">Transfer Effect</span>
+                            <span class="component-desc">Displays a transfer effect from one element to another.</span>
+                        </label>
+                    </div>
+                
+                </div>
+            </div>
+
+        </div>
+        <input type="submit" value="Download" class="ui-widget-content">
+    </form>
+</div>
+
+<script src="../src/download-builder.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
