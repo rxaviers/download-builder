@@ -112,4 +112,6 @@ Follow a suggestion to render your html.
 
 ## Demo
 
-Checkout our demo at "url to come".
+Checkout our [demo](http://downloadbuilder.github.com/download-builder/demo/).
+
+Checkout the [javascript application](https://github.com/DownloadBuilder/download-builder/blob/master/demo/app.js) of the demo above.
