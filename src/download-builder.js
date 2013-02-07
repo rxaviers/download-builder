@@ -331,6 +331,16 @@ DownloadBuilder.prototype = {
   on: function() {
     this.element.on.apply( this.element, arguments );
     return this;
+  },
+
+  /**
+   * downloadBuilder#set( component, value )
+   * - component [ Selector / jQuery element]: component to be checked or
+   *   unchecked.
+   * - value [ Boolean ]: check or uncheck component.
+   */
+  set: function( component, value ) {
+    defaultCheckAction.call( this, $( component ), value, {} );
   }
 };
 
