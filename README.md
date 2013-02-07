@@ -6,6 +6,12 @@ This is a front-end lib to give you core DownloadBuilder functionalities.
 - Handle check/uncheck of dependencies/dependents;
 - Handle toggleAll logic;
 
+## Demo
+
+Checkout our [demo](http://downloadbuilder.github.com/download-builder/demo/).
+
+Checkout the [javascript application](https://github.com/DownloadBuilder/download-builder/blob/master/demo/app.js) of the demo above.
+
 ## How to use it?
 
 ```javascript
@@ -109,9 +115,3 @@ Follow a suggestion to render your html.
 	</div>
 {{/each}}
 ```
-
-## Demo
-
-Checkout our [demo](http://downloadbuilder.github.com/download-builder/demo/).
-
-Checkout the [javascript application](https://github.com/DownloadBuilder/download-builder/blob/master/demo/app.js) of the demo above.
