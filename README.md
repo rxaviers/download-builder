@@ -8,9 +8,9 @@ This is a front-end lib to give you core DownloadBuilder functionalities.
 
 ## Demo
 
-Checkout our [demo](http://downloadbuilder.github.com/download-builder/demo/).
+Checkout our [demo](http://rxaviers.github.com/download-builder/download-builder/demo/).
 
-Checkout the [javascript application](https://github.com/DownloadBuilder/download-builder/blob/master/demo/app.js) of the demo above.
+Checkout the [javascript application](https://github.com/rxaviers/download-builder/blob/master/demo/app.js) of the demo above.
 
 ## How to use it?
 
